@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="robots" content="@@(content)@@" />
+<meta name="keywords" content="@@(content)@@" />
+<meta name="description" content="@@(content)@@" />
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="image_src" href="imagenes/firma-ucr-ico.png" />
+<link rel="icon" href="imagenes/ucr-favicon.png" type="image/png" />
+<link rel="shortcut icon" type="image/x-icon" href="imagenes/ucr-favicon.ico" />
+<link rel="stylesheet" href="css/comun.css" />
+<link rel="stylesheet" media="screen and (min-width: 2586px)" href="css/comun-xx-large.css" />
+<link rel="stylesheet" media="screen and (max-width: 2585px) and (min-width: 1349px)" href="css/comun-x-large.css" />
+<link rel="stylesheet" media="screen and (max-width: 1348px) and (min-width: 1146px)" href="css/comun-large.css" />
+<link rel="stylesheet" media="screen and (max-width: 1145px)" href="css/comun-medium.css" />
+<link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/tableta.css" />
+<link rel="stylesheet" media="screen and (width: 640px)" href="css/cel-large.css" />
+<link rel="stylesheet" media="screen and (max-width: 641px)" href="css/cel-medium.css" />
+<link rel="stylesheet" media="screen and (max-width: 392px)" href="css/cel-small.css" />
+<link rel="stylesheet" media="print" href="css/comun-x-large.css" />
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+
+<script language="javascript" type="text/javascript">
+	var resolucion = '';	
+	if (document.documentElement.offsetWidth <= 1145)
+		resolucion = 'medium';		
+	else if (document.documentElement.offsetWidth <= 1348)
+		resolucion = 'large';
+	else if (document.documentElement.offsetWidth <= 2585)
+		resolucion = 'x-large';
+	else
+		resolucion = 'xx-large';
+	
+	document.write ('<link rel="stylesheet" type="text/css" href="css/comun-' + resolucion + '.css" />');
+</script>
+<![endif]-->
+</head>
+
+<body>
+	<a name="up" id="up"></a>
+	<div id="marco-principal" class="desplazado">   			
+		<div id="encabezado" class="desplazado">
+			<div class="contenido-interno">
+				<div id="firma" class="izquierda"><a href="http://www.ucr.ac.cr/" id="firma-ucr" title="Universidad de Costa Rica - Página principal"><span>Universidad de Costa Rica</span></a></div>
+				<!-- TemplateBeginEditable name="logo" -->logo<!-- TemplateEndEditable -->
+				<!-- TemplateBeginEditable name="arriba-centro" -->arriba-centro<!-- TemplateEndEditable -->			
+				<!-- TemplateBeginEditable name="arriba-derecha" -->arriba-derecha<!-- TemplateEndEditable --><!-- arriba-derecha -->
+			</div> <!-- contenido-interno -->
+		</div>	<!-- encabezado -->	
+		<!-- TemplateBeginEditable name="centro-arriba" -->centro-arriba<!-- TemplateEndEditable --><!-- CENTRO_ARRIBA -->	
+		<!-- TemplateBeginEditable name="banner" -->banner<!-- TemplateEndEditable --><!-- BANNER_ARRIBA -->	
+		<div id="contenidos" class="contenido-interno">
+			<!-- TemplateBeginEditable name="contenidos-principales" -->contenidos-principales<!-- TemplateEndEditable -->
+		</div><!-- contenidos -->
+		
+		<div id="pie-pagina">
+			<!-- TemplateBeginEditable name="pies" -->pies<!-- TemplateEndEditable -->
+		</div><!-- pies --> 	
+    </div> <!-- marco-principal -->	
+	
+	<!-- TemplateBeginEditable name="abajo" -->abajo<!-- TemplateEndEditable --><!-- abajo -->
+	<a name="down" id="down"></a>
+</body>
+</html>
