@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="robots" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="image_src" href="imagenes/firma-ucr-ico.png" />
+<link rel="icon" href="imagenes/ucr-favicon.png" type="image/png" />
+<link rel="shortcut icon" type="image/x-icon" href="imagenes/ucr-favicon.ico" />
+<link rel="stylesheet" href="css/comun.css" />
+<link rel="stylesheet" media="screen and (min-width: 2586px)" href="css/comun-xx-large.css" />
+<link rel="stylesheet" media="screen and (max-width: 2585px) and (min-width: 1349px)" href="css/comun-x-large.css" />
+<link rel="stylesheet" media="screen and (max-width: 1348px) and (min-width: 1146px)" href="css/comun-large.css" />
+<link rel="stylesheet" media="screen and (max-width: 1145px)" href="css/comun-medium.css" />
+<link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/tableta.css" />
+<link rel="stylesheet" media="screen and (width: 640px)" href="css/cel-large.css" />
+<link rel="stylesheet" media="screen and (max-width: 641px)" href="css/cel-medium.css" />
+<link rel="stylesheet" media="screen and (max-width: 392px)" href="css/cel-small.css" />
+<link rel="stylesheet" media="print" href="css/comun-x-large.css" />
+
+<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
+	<script src="js/scripts.js"></script>	
+	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>	
+
+<!-- Carrusel 1 -->
+<script>
+var current = 0;
+var imagenes = new Array();
+
+$(document).ready(function() {
+    var numImages = 15;
+    if (numImages <= 6) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+	 
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 3;
+        }
+        
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+        
+        return false;
+    });
+
+    $('.left-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+
+    $('.right-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+        
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+        
+        return false;
+    }); 
+ });
+</script>
+
+<!-- Carrusel 2 -->
+<script>
+var current = 0;
+var imagenes = new Array();
+
+$(document).ready(function() {
+    var numImages = 15;
+    if (numImages <= 6) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+	 
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 3;
+        }
+        
+        $(".carrusel2").animate({"left": -($('#product_'+current).position().left)}, 600);
+        
+        return false;
+    });
+
+    $('.left-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+
+    $('.right-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+        
+        $(".carrusel2").animate({"left": -($('#product_'+current).position().left)}, 600);
+        
+        return false;
+    }); 
+ });
+</script>
+
+<!-- Carrusel 3 -->
+<script>
+var current = 0;
+var imagenes = new Array();
+
+$(document).ready(function() {
+    var numImages = 15;
+    if (numImages <= 6) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+	 
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 3;
+        }
+        
+        $(".carrusel3").animate({"left": -($('#product_'+current).position().left)}, 600);
+        
+        return false;
+    });
+
+    $('.left-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+
+    $('.right-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+        
+        $(".carrusel3").animate({"left": -($('#product_'+current).position().left)}, 600);
+        
+        return false;
+    }); 
+ });
+</script>
+
+</head>
+
+<body>
+	<a name="up" id="up"></a>
+	<div id="marco-principal" class="desplazado">   			
+		<div id="encabezado" class="desplazado">
+			<div class="contenido-interno">
+				<div id="firma" class="izquierda"><a href="http://www.ucr.ac.cr/" id="firma-ucr" title="Universidad de Costa Rica - Página principal"><span>Universidad de Costa Rica</span></a></div>				
+			</div> <!-- contenido-interno -->
+		</div>	<!-- encabezado -->	
+		<div id="contenidos" class="contenido-interno">
+			
+		<h1>&nbsp; Resultados visuales del proyecto de investigación B9314</h1>
+		
+	<h4>&nbsp; Gestión social del agua en los territorios indígenas desde la sociología visual. Casos seleccionados en las provincias de
+</h4>	
+<h4>&nbsp; Puntarenas y Limón.
+</h4>	
+
+	<h4>&nbsp; Coordinadora: Ana Lucía Mora</h4>	
+		
+	<div class="row">
+		<div class="column">
+			<h2> Descripción</h2>
+			<p>  Esta página web compila las principales imágenes recabadas en los doce talleres realizados en el marco del proyecto de investigación B9314 Gestión social del agua en los territorios indígenas desde la sociología visual. Casos seleccionados en las provincias de Puntarenas y Limón.  Diez talleres se realizaron en la provincia de Puntarenas y uno en la provincia de Limón. En el caso de Puntarenas, las comunidades en estudio fueron: Las Rosas del territorio indígena bribri de Salitre, Crum Shurim del territorio indígena bröran Térraba, Ojo de agua del territorio indígena brunca de Boruca, Alto Conte del territorio ngäbe Conteburica y el territorio indígena cabécar de Ujarrás, particularizando el caso de las comunidades de Ujarrás y Guanacaste. Mientras que en el caso de Limón la comunidad en estudio fue Amubri en territorio indígena Talamanca Bribri.
+				 La realización de estos talleres se ha realizado entre mayo del 2019 y marzo del 2021, con el propósito de conocer el significado del agua, las formas de abastecimiento de agua a través del tiempo y los cambios que han notado en la calidad y cantidad de agua a través del tiempo; así como los actores sociales involucrados en la gestión y las problemáticas cotidianas presentes (incendios forestales, deforestación, contaminación, disminuciones de caudales, pérdida de diversidad de fauna acuática, dificultades de abastecimiento ante el crecimiento de la población).
+</p>
+		
+			<p> </p>
+		
+			<h2>Comparación</h2>
+		
+			<p>Se realizó una comparación de imágenes radar del satélite Sentinel-1 entre 
+			   las fechas 16 de agosto de 2020 (Pre-evento) y 28 de agosto de 2020 (Post-evento). </p>
+		
+			<div class="img-comp-container">
+				<div class="img-comp-img">
+				<img src="images/20200828.jpeg" height="300" width="500">
+			</div>
+			<div class="img-comp-img img-comp-overlay">
+				<img src="images/20200816.jpeg" height="300" width="500">
+				</div>
+			</div>
+		
+		
+		</div>
+
+		<div class="column">
+			<h2>Visor web</h2>
+			<p>Incluye imágenes en color verdadero (bandas 3,2,1) y color infrarrojo cercano (bandas 4,3,2)</p>
+			<iframe src="map/index2.html" height="637" width="820" title="Iframe Example" frameBorder="0" scrolling="no"></iframe>
+			<p>&nbsp; <a href="map/index3.html">Visor ampliado</a></p>
+		</div>
+	</div>
+	
+	
+<div class="container">
+	
+	<h2>&nbsp; Fotografías</h2>
+			<p>&nbsp; Las Rosas de Salitre</p>
+	    <div class="row">
+        <div id="content" class="col-lg-12">
+            <div id="carrusel">
+                <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
+                <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
+                <div class="carrusel">
+                    <div class="product" id="product_0">
+                        <img src="images/Las Rosas de Salitre/P7180234.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    <div class="product" id="product_1">
+                        <img src="images/Las Rosas de Salitre/P7180235.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_2">
+                        <img src="images/Las Rosas de Salitre/P7180236.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    <div class="product" id="product_3">
+                        <img src="images/Las Rosas de Salitre/P7180237.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_4">
+                        <img src="images/Las Rosas de Salitre/P7180238.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    <div class="product" id="product_5">
+                        <img src="images/Las Rosas de Salitre/P7180239.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_6">
+                        <img src="images/Las Rosas de Salitre/P7180240.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    <div class="product" id="product_7">
+                        <img src="images/Las Rosas de Salitre/P7180241.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_8">
+                        <img src="images/Las Rosas de Salitre/P7180242.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    <div class="product" id="product_9">
+                        <img src="images/Las Rosas de Salitre/P7180243.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_10">
+                        <img src="images/Las Rosas de Salitre/P7180244.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                        
+                    </div>
+                    <div class="product" id="product_11">
+                        <img src="images/Las Rosas de Salitre/P7180245.jpg" width="195" height="100" />
+                        <h5>Dibujo Social 1</h5>
+                        
+                    </div>
+					<div class="product" id="product_12">
+                        <img src="images/Las Rosas de Salitre/P7180246.jpg" width="195" height="100" />
+                        <h5>Dibujo Social 2</h5>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+		
+    </div>
+	
+	<div class="container2">
+	
+	<p>Ojo de Agua Boruca</p>
+	    <div class="row">
+        <div id="content" class="col-lg-12">
+            <div id="carrusel2">
+                <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
+                <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
+                <div class="carrusel2">
+                    <div class="product" id="product_15">
+                        <img src="images/Boruca Ojo de Agua/P7170204.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    <div class="product" id="product_16">
+                        <img src="images/Boruca Ojo de Agua/P7170206.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_17">
+                        <img src="images/Boruca Ojo de Agua/P7170208.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    <div class="product" id="product_18">
+                        <img src="images/Boruca Ojo de Agua/P7170214.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_19">
+                        <img src="images/Boruca Ojo de Agua/P7170216.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    <div class="product" id="product_20">
+                        <img src="images/Boruca Ojo de Agua/P7170217.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_21">
+                        <img src="images/Boruca Ojo de Agua/P7170221.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_22">
+                        <img src="images/Boruca Ojo de Agua/P7170223.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_23">
+                        <img src="images/Boruca Ojo de Agua/P7170226.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_24">
+                        <img src="images/Boruca Ojo de Agua/P7170228.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_25">
+                        <img src="images/Boruca Ojo de Agua/P7170231.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_26">
+                        <img src="images/Boruca Ojo de Agua/P7170232.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+		
+    </div>
+	
+	<div class="container3">
+	
+	<p>Alto Conte</p>
+	    <div class="row">
+        <div id="content" class="col-lg-12">
+            <div id="carrusel3">
+                <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
+                <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
+                <div class="carrusel">
+                    <div class="product" id="product_27">
+                        <img src="images/Alto Conte/P1250361.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    <div class="product" id="product_28">
+                        <img src="images/Alto Conte/P1250454.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_29">
+                        <img src="images/Alto Conte/P1250470.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+					<div class="product" id="product_30">
+                        <img src="images/Alto Conte/P1250476.jpg" width="195" height="100" />
+                        <!-- <h5>Lorem ipsum 1</h5>-->
+                    </div>
+                    <div class="product" id="product_31">
+                        <img src="images/Alto Conte/P1250483.jpg" width="195" height="100" />
+                        <h5>Ilustración de la comunidad 1</h5>
+                      
+                    </div>
+					<div class="product" id="product_32">
+                        <img src="images/Alto Conte/P1250486.jpg" width="195" height="100" />
+                        <h5>Ilustración de la comunidad 2</h5>
+                        
+                    </div>
+                    <div class="product" id="product_33">
+                        <img src="images/Alto Conte/P1290500.jpg" width="195" height="100" />
+                       <h5>Ilustración de la comunidad 3</h5>
+                      
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+		
+    </div>
+	
+	    <div class="row">
+        <div class="col-lg-12">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Bloque de anuncios adaptable -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6676636635558550"
+                 data-ad-slot="8523024962"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+		
+	<div>	
+		<h2>&nbsp; Fuentes</h2>
+		<h5>&nbsp; Copernicus Sentinel data 2020. Retrieved from Land Viewer by EOS 31/08/20, processed by ESA. 
+		   <a href="https://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus">https://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus</a></h5>
+		<h5>&nbsp; Instituto Geográfico Nacional - Registro Nacional  (2020). Sistema Nacional de Información Territorial, Ortofotos 2014-2017, Capas Edificaciones y Vías, Costa Rica. 
+		   <a href="http://www.snitcr.go.cr/">http://www.snitcr.go.cr/</a></h5>
+		<h5>&nbsp; Mora, Rolando; Pirulli, Mariana(2017). Deslizamiento Las Torres, volcán Irazú, Costa Rica: definición de su volumen y su dirección preferencial de movimiento. San Pedro, Costa Rica. 
+		   <a href="https://revistas.ucr.ac.cr/index.php/geologica/article/view/29236/0">https://revistas.ucr.ac.cr/index.php/geologica/article/view/29236/0</a></h5>
+		<h5>&nbsp; OVSICORI (2020). Deslizamiento Volcán Irazú. Heredia, Costa Rica. 
+		   <a href="http://www.ovsicori.una.ac.cr/index.php/vulcanologia/deslizamiento-volcan-irazu">http://www.ovsicori.una.ac.cr/index.php/vulcanologia/deslizamiento-volcan-irazu</a></h5>
+		<h5>&nbsp; Planet Team (2017). Planet Application Program Interface: In Space for Life on Earth. San Francisco, CA. 
+		   <a href="https://api.planet.com">https://api.planet.com</a></h5>
+
+	</div>
+	
+		<script>
+		initComparisons();
+		</script>	
+		
+		</div><!-- contenidos -->
+		
+		
+
+		<div id="pie-pagina">
+			
+		</div><!-- pies --> 	
+    </div> <!-- marco-principal -->	
+	
+	<a name="down" id="down"></a>
+	
+	
+	
+</body>
+</html>
